@@ -1,0 +1,97 @@
+@relation dd
+@attribute duration numeric
+@attribute protocol_type {udp, tcp, icmp}
+@attribute service {private, domain_u, http, ecr_i, telnet, auth, eco_i}
+@attribute flag {SF, S0, RSTR}
+@attribute src_bytes numeric
+@attribute dst_bytes numeric
+@attribute class {normal, smurf, neptune, satan, ipsweep, back}
+@data
+0,udp,private,SF,105,146,normal
+0,udp,private,SF,105,146,normal
+0,udp,private,SF,105,146,normal
+0,udp,domain_u,SF,29,0,normal
+0,udp,private,SF,105,146,normal
+0,tcp,http,SF,223,185,normal
+0,tcp,http,SF,230,260,normal
+0,udp,private,SF,105,146,normal
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,icmp,ecr_i,SF,1032,0,smurf
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,telnet,S0,0,0,neptune
+0,tcp,http,SF,210,3431,normal
+0,tcp,http,SF,209,1942,normal
+0,tcp,auth,SF,10,36,normal
+0,tcp,http,SF,201,1350,normal
+0,tcp,http,SF,196,2908,normal
+0,udp,private,SF,1,0,satan
+0,udp,private,SF,1,0,satan
+0,udp,private,SF,1,0,satan
+0,udp,private,SF,1,0,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,udp,private,SF,1,1,satan
+0,icmp,eco_i,SF,8,0,ipsweep
+0,icmp,eco_i,SF,8,0,ipsweep
+0,icmp,eco_i,SF,8,0,ipsweep
+0,icmp,eco_i,SF,8,0,ipsweep
+0,icmp,eco_i,SF,8,0,ipsweep
+0,udp,private,SF,105,147,normal
+0,udp,private,SF,105,147,normal
+0,udp,private,SF,105,147,normal
+0,udp,private,SF,105,147,normal
+0,udp,private,SF,105,147,normal
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,RSTR,39420,4380,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
+0,tcp,http,SF,54540,8314,back
